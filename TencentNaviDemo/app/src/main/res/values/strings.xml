@@ -20,6 +20,7 @@
     <string name="navifixing_proportion">设置车标位置</string>
     <string name="naviline_width">设置路线宽度</string>
     <string name="naviline_erase">设置路线擦除</string>
+    <string name="navi_panel_hide">设置是否隐藏导航面板</string>
 
     <string name="navi_panel_style">自定义导航面板</string>
     <string name="navi_speed_style">自定义限速样式</string>

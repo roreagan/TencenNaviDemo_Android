@@ -114,6 +114,12 @@
                 android:textOn="on"/>
 
         </LinearLayout>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/panel_hide"
+            android:text="隐藏导航面板"
+            android:visibility="gone"/>
 
         <!--导航功能-->
         <LinearLayout

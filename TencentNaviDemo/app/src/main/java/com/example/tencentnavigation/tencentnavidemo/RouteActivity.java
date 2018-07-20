@@ -99,7 +99,8 @@ public class RouteActivity extends AppCompatActivity {
     private TencentRouteSearchCallback routeSearchCallback = new TencentRouteSearchCallback() {
         @Override
         public void onRouteSearchFailure(int i, String s) {
-
+            //i错误码提示:1001为网络错误，1002为无网络，2001为返回数据无效（或空），2002为起终点参数错误，2003为途经点参数错误，2004为吸附失败，2005为算路失败，2999为服务器内部错误
+            Log.e("route","error:"+i);
         }
 
         @Override

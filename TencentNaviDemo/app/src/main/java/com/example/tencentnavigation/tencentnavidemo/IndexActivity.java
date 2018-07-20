@@ -48,7 +48,7 @@ public class IndexActivity extends AppCompatActivity implements AdapterView.OnIt
             }
             String name = getItem(position);
             TextView textView = convertView.findViewById(R.id.content);
-            if(!(position == 0||position == 1||position == 2||position == 3||position == 4 || position == 12)){
+            if(!(position == 0||position == 1||position == 2||position == 3||position == 4 || position == 13)){
                 textView.setText("        "+name);
             }else {
                 textView.setText("  "+name);
@@ -74,6 +74,7 @@ public class IndexActivity extends AppCompatActivity implements AdapterView.OnIt
         strings.add(getString(R.string.navifixing_proportion));
         strings.add(getString(R.string.naviline_width));
         strings.add(getString(R.string.naviline_erase));//11
+        strings.add(getResources().getString(R.string.navi_panel_hide));
 
         strings.add(getString(R.string.navi_panel));//12
         strings.add(getString(R.string.navi_panel_style));//13
@@ -140,14 +141,17 @@ public class IndexActivity extends AppCompatActivity implements AdapterView.OnIt
                 Intent SetLineEraseIntent = new Intent(this, SetLineEraseActivity.class);
                 startActivity(SetLineEraseIntent);
                 break;
-
-            case 13:
+            case 12:
+                Intent setPanelHideIntent = new Intent(this, SetPanelHideActivity.class);
+                startActivity(setPanelHideIntent);
+                break;
+            case 14:
                 //自定义导航面板
                 Intent NaviPanelStyle = new Intent(this, NaviPanelStyleActivity.class);
                 startActivity(NaviPanelStyle);
                 break;
 
-            case 14:
+            case 15:
                 //自定义限速样式
                 Intent NaviSpeedStyle = new Intent(this, NaviSpeedStyleActivity.class);
                 startActivity(NaviSpeedStyle);
