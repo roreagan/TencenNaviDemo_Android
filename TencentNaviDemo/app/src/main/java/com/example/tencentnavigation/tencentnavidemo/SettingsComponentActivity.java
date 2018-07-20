@@ -138,8 +138,6 @@ public class SettingsComponentActivity extends Activity implements View.OnClickL
             case MODE_OVERVIEW:
                 naviModeRadioGroup.check(R.id.mode_2d_overview);
                 break;
-            case MODE_NONE:
-                break;
         }
 
     }
